@@ -7,7 +7,7 @@ neofetch.config goes to `${HOME}/.config/neofetch/config.conf`, modify path to l
 
 Create file in `/etc/update-motd.d/` (for example 10-neofetch) with
 ``` 
-#!/bin/bash
+#!/bin/sh
 su - username -c 'neofetch'
 ```
 Then make it executable: `chmod +x`.  
@@ -19,5 +19,6 @@ For weather forecast install `ansiweather` with apt, then create file in `/etc/u
 #!/bin/sh
 ansiweather -l cityname
 ```
+Then make it executable: `chmod +x`.
 
 ![example](img/2020-05-04_00-04-27.jpg)
